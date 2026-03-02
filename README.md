@@ -38,13 +38,12 @@ Supervisor (for production workers)
 # 1. Clone & Install
 git clone https://github.com/VikasJakasaniya/taskforge-backend.git
 cd taskforge-backend
-composer install
 
 # 2. Environment
 cp .env.example .env
 php artisan key:generate
 
-# 2.2 Configure `.env`: Add or replace the following variables
+# 2.1 Configure `.env`: Add or replace the following variables
 APP_URL=http://localhost:8000
 FRONTEND_URL=http://localhost:5173
 SANCTUM_STATEFUL_DOMAINS=localhost:5173,127.0.0.1:5173,localhost,127.0.0.1
@@ -83,6 +82,9 @@ OTP_VERIFY_LIMIT=5
 IMPORT_DEMO_MODE=false
 IMPORT_CHUNK_SIZE=500
 IMPORT_DEMO_DELAY=1
+
+# 2.2 Install dependencies
+composer install
 
 # 3. Database Setup
 Create a database named 'taskforge' in mysql/phpMyAdmin
