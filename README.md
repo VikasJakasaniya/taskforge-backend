@@ -36,7 +36,7 @@ Supervisor (for production workers)
 
 ```bash
 # 1. Clone & Install
-git clone https://github.com/VikasJakasaniya/task-forge-laravel-backend.git
+git clone https://github.com/VikasJakasaniya/taskforge-backend.git
 cd taskforge-backend
 composer install
 
