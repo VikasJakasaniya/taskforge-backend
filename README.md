@@ -116,6 +116,8 @@ php artisan route:clear
 
 ### Running Tests
 Please check the TEST_COMMANDS.md file for more information to run test cases.
+
+Please find the sample CSV file at the root of the project. name is "sample_tasks_12000_records.csv". You can use this file to test the import functionality into fronted side
 ```
 
 ## 💡 Frontend Usage Example Flow
