@@ -41,7 +41,6 @@ cd taskforge-backend
 
 # 2. Environment
 cp .env.example .env
-php artisan key:generate
 
 # 2.1 Configure `.env`: Add or replace the following variables
 APP_URL=http://localhost:8000
@@ -85,6 +84,7 @@ IMPORT_DEMO_DELAY=1
 
 # 2.2 Install dependencies
 composer install
+php artisan key:generate
 
 # 3. Database Setup
 Create a database named 'taskforge' in mysql/phpMyAdmin
@@ -97,13 +97,10 @@ Create a database named 'taskforge' in mysql/phpMyAdmin
 # 4. Run migrations
 php artisan migrate
 
-# 5. Install broadcasting
-php artisan install:broadcasting
-
-# 6. Start services (need 3 terminals)
+# 5. Start services (need 3 terminals)
 php artisan serve           # Terminal 1
 php artisan horizon         # Terminal 2
-php artisan reverb:start    # Terminal 3
+php artisan reverb:start --debug    # Terminal 3
 ```
 
 ### Access Points
