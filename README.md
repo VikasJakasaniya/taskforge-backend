@@ -100,7 +100,7 @@ php artisan migrate
 # 5. Start services (need 3 terminals)
 php artisan serve           # Terminal 1
 php artisan horizon         # Terminal 2
-php artisan reverb:start --debug    # Terminal 3
+php artisan reverb:start --debug    # Terminal 3 (Recommended: also manage via Supervisor in production)
 ```
 
 ### Access Points
